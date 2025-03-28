@@ -15,6 +15,7 @@ def crear(cls, x=0, y=0):
 def __str__(self):
     return f"({self.x},{self.y})"
 
+#Indica el cuadrante en el que se encuentra el punto
 def cuadrante(self):
     if self.x > 0 and self.y > 0:
         return "Primer cuadrante"
@@ -30,3 +31,7 @@ def cuadrante(self):
         return "Sobre el eje X"
     else:
         return "En el origen"
+    
+#Añadir método vector (calcula vector entre dos puntos)
+def vector(self, otro_punto):
+    return Punto(otro_punto.x - self.x, otro_punto.y - self.y)
