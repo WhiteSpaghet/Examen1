@@ -35,3 +35,14 @@ def main():
     }
     punto_mas_lejano = max(distancias, key=distancias.get)
     print(f"El punto más lejano del origen es: {punto_mas_lejano}")
+
+    # Crear un rectángulo con los puntos A y B
+    rectangulo = Rectangulo(A, B)
+
+    # Consultar base, altura y área del rectángulo
+    print(f"Base del rectángulo: {rectangulo.base()}")
+    print(f"Altura del rectángulo: {rectangulo.altura()}")
+    print(f"Área del rectángulo: {rectangulo.area()}")
+
+if __name__ == "__main__":
+    main()
