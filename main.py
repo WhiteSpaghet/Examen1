@@ -13,3 +13,12 @@ def main():
     print(f"Punto B: {B}")
     print(f"Punto C: {C}")
     print(f"Punto D: {D}")
+
+    # Consultar cuadrantes
+    print(f"El punto A pertenece al cuadrante: {A.cuadrante()}")
+    print(f"El punto C pertenece al cuadrante: {C.cuadrante()}")
+    print(f"El punto D pertenece al cuadrante: {D.cuadrante()}")
+
+    # Consultar vectores AB y BA
+    print(f"Vector AB: {A.vector(B)}")
+    print(f"Vector BA: {B.vector(A)}")
