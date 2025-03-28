@@ -16,6 +16,7 @@ def main():
 
     # Consultar cuadrantes
     print(f"El punto A pertenece al cuadrante: {A.cuadrante()}")
+    print(f"El punto B pertenece al cuadrante: {B.cuadrante()}")
     print(f"El punto C pertenece al cuadrante: {C.cuadrante()}")
     print(f"El punto D pertenece al cuadrante: {D.cuadrante()}")
 
