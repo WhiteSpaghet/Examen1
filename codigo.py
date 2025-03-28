@@ -10,3 +10,7 @@ class Punto:
 @classmethod
 def crear(cls, x=0, y=0):
     return cls(x, y)
+
+#Sobreescribir método __str__
+def __str__(self):
+    return f"({self.x},{self.y})"
