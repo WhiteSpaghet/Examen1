@@ -22,3 +22,16 @@ def main():
     # Consultar vectores AB y BA
     print(f"Vector AB: {A.vector(B)}")
     print(f"Vector BA: {B.vector(A)}")
+
+     # Consultar distancias
+    print(f"Distancia entre A y B: {A.distancia(B)}")
+    print(f"Distancia entre B y A: {B.distancia(A)}")
+
+    # Determinar el punto más lejano del origen
+    distancias = {
+        "A": A.distancia(D),
+        "B": B.distancia(D),
+        "C": C.distancia(D)
+    }
+    punto_mas_lejano = max(distancias, key=distancias.get)
+    print(f"El punto más lejano del origen es: {punto_mas_lejano}")
