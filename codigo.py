@@ -35,3 +35,10 @@ def cuadrante(self):
 #Añadir método vector (calcula vector entre dos puntos)
 def vector(self, otro_punto):
     return Punto(otro_punto.x - self.x, otro_punto.y - self.y)
+
+#Añadir método distancia (calcula la distancia entre dos puntos)
+def distancia(self, otro_punto):
+    import math
+    distancia = math.sqrt((otro_punto.x - self.x)**2 + (otro_punto.y - self.y)**2)
+    print(f"La distancia entre los puntos es: {distancia}u")
+    return distancia
