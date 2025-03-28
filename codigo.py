@@ -5,3 +5,8 @@ class Punto:
 
     def __repr__(self):
         return f"Punto(x={self.x}, y={self.y})"
+    
+#Añadir método constructor
+@classmethod
+def crear(cls, x=0, y=0):
+    return cls(x, y)
